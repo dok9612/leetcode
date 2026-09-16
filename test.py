@@ -6,6 +6,8 @@ if right, return right val
 if none, return none
 need helper function to not input p and q
 """
+
+
 def lca(root, p, q):
     def dfs(node):
         if not node:
@@ -20,4 +22,5 @@ def lca(root, p, q):
         if left and right:
             return node.val
         return left or right
+
     return dfs(root)
